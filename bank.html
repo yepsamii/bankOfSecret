@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takaaaaa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="money-clipart-emoji-5.png"/>
 </head>
 <body>
-    
+    <header class="text-center m-32 bg-[#DC851F] py-10 rounded-full">
+        <p class="text-7xl text-[#dcddb6]">Onek <span class="font-bold text-pink-950">Takaaaaaa</span>!!!!</p>
+    </header>
+    <main>
+        <div class="flex  justify-around mx-10">
+            <div class="text-white bg-red-500 hover:bg-red-700 w-[30%] py-6 px-16">
+                <h1 class="text-3xl font-semibold">Deposit</h1> <br>
+                <h2 class="text-5xl">$<span id="depoAmount">00</span></h2>
+            </div>
+            <div class="text-white bg-violet-500 hover:bg-violet-700 w-[30%] py-6 px-16">
+                <h1 class="text-3xl font-semibold">Withdraw</h1> <br>
+                <h2 class="text-5xl">$<span id="withdrawAmount">00</span></h2>
+            </div>
+            <div class="text-white bg-green-500 hover:bg-green-700 w-[30%] py-6 px-16">
+                <h1 class="text-3xl font-semibold">Total Amount</h1> <br>
+                <h2 class="text-5xl">$<span id="balance">2400</span></h2>
+            </div>
+        </div>
+
+        <div class="flex justify-around ">
+            <div class="flex justify-center w-[45%] bg-sky-700 h-44 px-12 py-10 mt-10">
+                <form>
+                    <input  id="deposit" class="text-2xl h-10 block rounded px-8 py-6" type="number" placeholder="$Enter the Amount" name=""><br>
+                    <button id="btn-deposit" class="bg-black text-white hover:bg-gray-900 text-xl rounded-3xl py-1 px-5 w-1/2" type="button">Deposit</button>
+                </form>
+            </div>
+            <div class="flex justify-center w-[45%] bg-red-700 h-44 px-12 py-10 mt-10">
+                <form>
+                    <input  id="withdraw" class="text-2xl h-10 block rounded px-8 py-6" type="number" placeholder="$Enter the Amount" name=""><br>
+                    <button id="btn-withdraw" class="bg-black text-white hover:bg-gray-900 text-xl rounded-3xl py-1 px-5 w-1/2" type="button">Withdraw</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="systum.js"></script>
 </body>
 </html>
